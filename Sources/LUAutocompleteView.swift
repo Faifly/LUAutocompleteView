@@ -65,9 +65,10 @@ open class LUAutocompleteView: UIView {
         }
     }
 
+    public let tableView = UITableView()
+    
     // MARK: - Private Properties
 
-    let tableView = UITableView()
     private var heightConstraint: NSLayoutConstraint?
     private static let cellIdentifier = "AutocompleteCellIdentifier"
     private var elements = [String]() {
