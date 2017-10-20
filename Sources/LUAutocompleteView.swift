@@ -260,6 +260,6 @@ extension LUAutocompleteView: UITableViewDelegate {
             height = 0
         }
         textField?.text = elements[indexPath.row]
-        delegate?.autocompleteView(self, didSelect: elements[indexPath.row])
+        delegate?.autocompleteView(self, didSelect: elements[indexPath.row], indexPath: indexPath)
     }
 }
